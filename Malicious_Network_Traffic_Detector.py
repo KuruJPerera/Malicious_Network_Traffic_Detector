@@ -7,12 +7,12 @@ import logging
 import time
 from datetime import datetime
 
-# For demonstration purposes I have put tryhackme.com and hackthebox.com hosting IP in the blacklist array
+# For demonstration purposes I have put tryhackme.com hosting IP in the blacklist array
 # Run the script, nothing will happen, navigate tMao http://tryhackme.com and see the output
 # in the terminal and in json file.
 
 # Configuration
-blacklisted_ips = {"109.176.239.69", "104.22.55.228"}  # Example bad IPs
+blacklisted_ips = {"109.176.239.69"}  # Example bad IPs
 connection_limit = 20  # Threshold for excessive connections
 log_file = "network_alerts.log"
 json_file = "network_alerts.json"
